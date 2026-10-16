@@ -447,7 +447,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Activities without a difficulty are open to every level.
       const difficulty = details.difficulty?.toLowerCase();
       if (
-        (currentDifficulty === "all" && difficulty) ||
         (currentDifficulty && currentDifficulty !== "all" &&
           difficulty && difficulty !== currentDifficulty)
       ) {
