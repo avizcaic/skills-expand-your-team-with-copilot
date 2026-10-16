@@ -32,6 +32,24 @@
   --info-light: #d1ecf1;
 }
 
+body[data-theme="dark"] {
+  --primary: #9fa8da;
+  --primary-light: #7986cb;
+  --primary-dark: #3949ab;
+  --primary-text: #ffffff;
+  --background: #12151c;
+  --surface: #1e232d;
+  --text-primary: #e7eaf0;
+  --text-secondary: #adb5c4;
+  --border: #38404d;
+  --border-light: #2e3540;
+  --border-focus: #566273;
+  --success-light: #1b3524;
+  --warning-light: #3b321c;
+  --error-light: #3d2327;
+  --info-light: #1c3439;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -331,6 +349,12 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+input {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
 }
 
 /* Tooltip styles */
@@ -652,6 +676,9 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #user-status {
