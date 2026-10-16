@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // State for activities and filters
   let allActivities = {};
   let currentFilter = "all";
-  let currentDifficulty = "";
+  let currentDifficulty = "all";
   let searchQuery = new URLSearchParams(window.location.search).get("activity") || "";
   searchInput.value = searchQuery;
   let currentDay = "";
